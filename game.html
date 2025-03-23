@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="game-title">Game - OnlineGame</title>
+    <meta id="game-description" name="description" content="Play online games for free on OnlineGame. Enjoy the best browser games without downloads.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Online<span>Game</span></h1>
+                    </a>
+                </div>
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="category.html?category=action">Action</a></li>
+                    <li><a href="category.html?category=puzzle">Puzzle</a></li>
+                    <li><a href="category.html?category=adventure">Adventure</a></li>
+                    <li><a href="category.html?category=skill">Skill</a></li>
+                    <li><a href="category.html">All Games</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="game-showcase">
+        <div class="container">
+            <div class="game-details">
+                <h2 id="game-name">Game Title</h2>
+                <p id="game-short-desc">Game short description will appear here.</p>
+            </div>
+            <div class="game-player">
+                <div class="game-frame-container">
+                    <iframe id="game-frame" src="" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+                </div>
+                <div class="game-controls">
+                    <button id="fullscreen-btn" class="control-btn"><i class="fas fa-expand"></i> Fullscreen</button>
+                    <button id="refresh-btn" class="control-btn"><i class="fas fa-sync-alt"></i> Restart</button>
+                    <div class="game-like">
+                        <button id="like-btn" class="like-btn"><i class="far fa-heart"></i> <span id="like-count">0</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="game-info">
+        <div class="container">
+            <div class="game-description">
+                <h3>About This Game</h3>
+                <p id="game-full-desc">Full game description will appear here.</p>
+                <div class="game-meta-info">
+                    <div class="meta-item">
+                        <h4>Category</h4>
+                        <p id="game-category">Category</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Controls</h4>
+                        <p id="game-controls">Controls information</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="related-games">
+                <h3>Similar Games</h3>
+                <div id="related-games-container" class="game-grid">
+                    <!-- Related games will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Online<span>Game</span></h2>
+                    <p>The best collection of free online games</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="category.html?category=action">Action Games</a></li>
+                            <li><a href="category.html?category=puzzle">Puzzle Games</a></li>
+                            <li><a href="category.html?category=adventure">Adventure Games</a></li>
+                            <li><a href="category.html?category=skill">Skill Games</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="category.html">All Games</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 OnlineGame - All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/games-data.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html> 
